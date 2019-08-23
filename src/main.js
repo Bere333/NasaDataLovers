@@ -32,6 +32,8 @@ selectCamara.addEventListener('click', () => {
       const selectOrder = document.querySelector('#order-date');
       selectOrder.addEventListener('click', () => {
         const valueOrder = selectOrder.options[selectOrder.selectedIndex].value;
+        console.log(valueOrder);
+        
         const selectOrderMayorMenor = document.querySelector('#order');
         selectOrderMayorMenor.addEventListener('click', () => {
         const valueOrderMayorMenor = [selectOrder.selectedIndex].value;
