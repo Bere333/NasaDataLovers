@@ -4,25 +4,57 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
   </head>
   <body>
-    <section>
-     <p>Selecciona por:</p>
-     <select name="" id="select-for-camera">
-       <option value="All">Selecciona el nombre de la camara:</option>
-       <option value="FHAZ">Front Hazard Avoidance Camera</option>
-       <option value="NAVCAM">Navigation Camera</option>
-       <option value="MAST">Mast Camera</option>
-       <option value="CHEMCAM">Chemistry and Camera Complex</option>
-       <option value="MAHLI">Mars Hand Lens Imager</option>
-       <option value="MARDI">Mars Descent Imager</option>
-       <option value="RHAZ">Rear Hazard Avoidance Camera</option>
-     </select>
-     
+    <header class="title">
+      <p>EXPLORA MARTE</p>
+    </header>
+    <section class="section-photos">
+      <div class="conteiner">
+        
+        
+          <p>Selecciona por: </p>
+        
+        <div>
+          <select name="" id="select-for-camera">
+            <option value="All">Selecciona el nombre de la camara:</option>
+            <option value="FHAZ">Front Hazard Avoidance Camera</option>
+            <option value="NAVCAM">Navigation Camera</option>
+            <option value="MAST">Mast Camera</option>
+            <option value="CHEMCAM">Chemistry and Camera Complex</option>
+            <option value="MAHLI">Mars Hand Lens Imager</option>
+            <option value="MARDI">Mars Descent Imager</option>
+            <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+          </select>
+        </div>
+        <div>
+          <select name="" id="order-date">
+            <option value="All">Ordenar por:</option>
+            <option value="full_name">Nombre de la cámara</option>
+            <option value="earth_date">Fecha en la Tierra</option>
+            <option value="id">Número de cámara</option>
+          </select>
+  
+        </div>
+        <div>
+  
+          <select name="" id="order">
+            <option value="menor-mayor">AZ</option>
+            <option value="mayor-menor">ZA</option>
+            <option value="menor-mayor">2011-2017</option>
+            <option value="mayor-menor">2017-2011</option>
+          </select>
+        
+       
+      </div>
+      </div>
+      
 
     </section>
 
     <div id="root"></div>
+
     
     <script src="data.js"></script>
     <script src="main.js"></script>
